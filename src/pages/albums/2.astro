@@ -1,0 +1,78 @@
+---
+import BlogLayout from '../../layouts/BlogLayout.astro';
+---
+
+<BlogLayout title="Albums - Page 2">
+  <div class="max-w-4xl mx-auto">
+    <h1 class="text-4xl font-bold mb-8">Oasis Albums</h1>
+
+    <div class="space-y-12">
+      <article class="bg-white p-6 rounded-lg shadow-lg">
+        <h2 class="text-3xl font-bold mb-4">Be Here Now (1997)</h2>
+        <div class="grid md:grid-cols-2 gap-6">
+          <div>
+            <h3 class="text-xl font-bold mb-2">Album Statistics</h3>
+            <ul class="list-disc pl-6">
+              <li>Release Date: August 21, 1997</li>
+              <li>UK Chart Position: #1</li>
+              <li>First Week Sales: 696,000 copies</li>
+              <li>Total Sales: Over 8 million copies worldwide</li>
+              <li>Certification: 3× Platinum (UK)</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold mb-2">Key Tracks</h3>
+            <ul class="list-disc pl-6">
+              <li>D'You Know What I Mean?</li>
+              <li>Stand By Me</li>
+              <li>All Around the World</li>
+              <li>Don't Go Away</li>
+            </ul>
+          </div>
+        </div>
+        <div class="mt-4">
+          <h3 class="text-xl font-bold mb-2">Recording Details</h3>
+          <p>Recorded at Abbey Road Studios and Ridge Farm Studios between October 1996 and May 1997. The album was notably recorded during the height of the band's fame and excess, with production costs estimated at over £250,000.</p>
+        </div>
+      </article>
+
+      <article class="bg-white p-6 rounded-lg shadow-lg">
+        <h2 class="text-3xl font-bold mb-4">Standing on the Shoulder of Giants (2000)</h2>
+        <div class="grid md:grid-cols-2 gap-6">
+          <div>
+            <h3 class="text-xl font-bold mb-2">Album Statistics</h3>
+            <ul class="list-disc pl-6">
+              <li>Release Date: February 28, 2000</li>
+              <li>UK Chart Position: #1</li>
+              <li>First Week Sales: 310,000 copies</li>
+              <li>Total Sales: Over 3 million copies worldwide</li>
+              <li>Certification: Platinum (UK)</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold mb-2">Key Tracks</h3>
+            <ul class="list-disc pl-6">
+              <li>Go Let It Out</li>
+              <li>Who Feels Love?</li>
+              <li>Sunday Morning Call</li>
+              <li>Where Did It All Go Wrong?</li>
+            </ul>
+          </div>
+        </div>
+        <div class="mt-4">
+          <h3 class="text-xl font-bold mb-2">Band Changes</h3>
+          <p>The first album without founding members Paul "Bonehead" Arthurs and Paul "Guigsy" McGuigan, marking a significant change in the band's lineup and sound.</p>
+        </div>
+      </article>
+
+      <div class="flex justify-between mt-8">
+        <a href="/albums" class="inline-block bg-black text-white px-6 py-2 rounded hover:bg-gray-800">
+          ← Previous Page
+        </a>
+        <a href="/albums/3" class="inline-block bg-black text-white px-6 py-2 rounded hover:bg-gray-800">
+          Next Page →
+        </a>
+      </div>
+    </div>
+  </div>
+</BlogLayout>

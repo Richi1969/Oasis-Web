@@ -1,0 +1,46 @@
+---
+import Banner from '../components/Banner.astro';
+
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Oasis - The Definitive History" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>{title} - Oasis History</title>
+  </head>
+  <body class="bg-gray-100">
+    <Banner />
+    <nav class="bg-black text-white p-4">
+      <div class="container mx-auto">
+        <div class="flex justify-between items-center">
+          <a href="/" class="text-2xl font-bold">Oasis Archives</a>
+          <div class="space-x-4">
+            <a href="/albums" class="hover:text-gray-300">Albums</a>
+            <a href="/singles" class="hover:text-gray-300">Singles</a>
+            <a href="/members/gallaghers" class="hover:text-gray-300">The Gallaghers</a>
+            <a href="/members/others" class="hover:text-gray-300">Other Members</a>
+            <a href="/concerts" class="hover:text-gray-300">Concerts</a>
+            <a href="/awards" class="hover:text-gray-300">Awards</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main class="container mx-auto px-4 py-8">
+      <slot />
+    </main>
+    <footer class="bg-black text-white p-4 mt-8">
+      <div class="container mx-auto text-center">
+        <p>© 2024 Oasis Archives. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

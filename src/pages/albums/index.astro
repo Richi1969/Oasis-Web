@@ -1,0 +1,68 @@
+---
+import BlogLayout from '../../layouts/BlogLayout.astro';
+---
+
+<BlogLayout title="Albums">
+  <div class="max-w-4xl mx-auto">
+    <h1 class="text-4xl font-bold mb-8">Oasis Albums</h1>
+
+    <div class="space-y-12">
+      <article class="bg-white p-6 rounded-lg shadow-lg">
+        <h2 class="text-3xl font-bold mb-4">Definitely Maybe (1994)</h2>
+        <div class="grid md:grid-cols-2 gap-6">
+          <div>
+            <h3 class="text-xl font-bold mb-2">Album Statistics</h3>
+            <ul class="list-disc pl-6">
+              <li>Release Date: August 29, 1994</li>
+              <li>UK Chart Position: #1</li>
+              <li>Weeks on Chart: 177</li>
+              <li>Sales: Over 8 million copies worldwide</li>
+              <li>Certification: 8× Platinum (UK)</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold mb-2">Key Tracks</h3>
+            <ul class="list-disc pl-6">
+              <li>Live Forever</li>
+              <li>Supersonic</li>
+              <li>Cigarettes & Alcohol</li>
+              <li>Rock 'n' Roll Star</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <article class="bg-white p-6 rounded-lg shadow-lg">
+        <h2 class="text-3xl font-bold mb-4">(What's the Story) Morning Glory? (1995)</h2>
+        <div class="grid md:grid-cols-2 gap-6">
+          <div>
+            <h3 class="text-xl font-bold mb-2">Album Statistics</h3>
+            <ul class="list-disc pl-6">
+              <li>Release Date: October 2, 1995</li>
+              <li>UK Chart Position: #1</li>
+              <li>Weeks on Chart: 258</li>
+              <li>Sales: Over 22 million copies worldwide</li>
+              <li>Certification: 14× Platinum (UK)</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold mb-2">Key Tracks</h3>
+            <ul class="list-disc pl-6">
+              <li>Wonderwall</li>
+              <li>Don't Look Back in Anger</li>
+              <li>Some Might Say</li>
+              <li>Champagne Supernova</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <!-- More albums will be added in subsequent pages -->
+      <div class="text-center mt-8">
+        <a href="/albums/2" class="inline-block bg-black text-white px-6 py-2 rounded hover:bg-gray-800">
+          Next Page →
+        </a>
+      </div>
+    </div>
+  </div>
+</BlogLayout>

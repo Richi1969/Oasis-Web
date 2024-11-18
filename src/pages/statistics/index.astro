@@ -1,0 +1,64 @@
+---
+import BlogLayout from '../../layouts/BlogLayout.astro';
+---
+
+<BlogLayout title="Statistics">
+  <div class="max-w-4xl mx-auto">
+    <h1 class="text-4xl font-bold mb-8">Oasis Statistics & Achievements</h1>
+
+    <div class="space-y-8">
+      <section class="bg-white p-6 rounded-lg shadow-lg">
+        <h2 class="text-2xl font-bold mb-4">Global Sales</h2>
+        <div class="grid md:grid-cols-2 gap-6">
+          <div>
+            <h3 class="text-xl font-bold mb-2">Album Sales by Region</h3>
+            <ul class="list-disc pl-6">
+              <li>UK: 34 million</li>
+              <li>Europe: 18 million</li>
+              <li>North America: 15 million</li>
+              <li>Asia: 5 million</li>
+              <li>Rest of World: 3 million</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold mb-2">Best-Selling Albums</h3>
+            <ul class="list-disc pl-6">
+              <li>(What's the Story) Morning Glory?: 22 million</li>
+              <li>Definitely Maybe: 8 million</li>
+              <li>Be Here Now: 8 million</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-white p-6 rounded-lg shadow-lg">
+        <h2 class="text-2xl font-bold mb-4">Chart Records</h2>
+        <div class="grid md:grid-cols-2 gap-6">
+          <div>
+            <h3 class="text-xl font-bold mb-2">UK Singles Chart</h3>
+            <ul class="list-disc pl-6">
+              <li>Number One Singles: 8</li>
+              <li>Top 10 Singles: 23</li>
+              <li>Weeks at Number One: 34</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold mb-2">UK Albums Chart</h3>
+            <ul class="list-disc pl-6">
+              <li>Number One Albums: 8</li>
+              <li>Consecutive Number Ones: 7</li>
+              <li>Weeks at Number One: 39</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- More statistics will be added in subsequent pages -->
+      <div class="text-center mt-8">
+        <a href="/statistics/2" class="inline-block bg-black text-white px-6 py-2 rounded hover:bg-gray-800">
+          Next Page →
+        </a>
+      </div>
+    </div>
+  </div>
+</BlogLayout>
